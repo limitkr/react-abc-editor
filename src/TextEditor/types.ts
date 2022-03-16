@@ -4,12 +4,12 @@ export interface TextEditorProps {
   /**
    * If `true`, the Editor allow editing abc strings.
    * If `false`, the textarea will be disabled.
-   * @default true
+   * @defaultValue true
    */
   allowEdit?: boolean;
   /**
    * If `true`, the Editor allow clicking abc element.
-   * @default true
+   * @defaultValue true
    */
   allowClick?: boolean;
   /**

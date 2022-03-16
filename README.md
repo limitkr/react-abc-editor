@@ -1,13 +1,17 @@
 # react-abc-editor
 
-A React components that can write abc notation.
+React component for showing and writing abc notations using the Abcjs library.<br>
+Thank you @paulrosen for creator of Abcjs library.
 
 ## Quick Start
 
 ### Install
 
 ```bash
-# The library not published yet.
+# Using npm:
+npm i react-abc-editor
+# or Yarn package manager:
+yarn add react-abc-editor
 ```
 
 ### Storybook Preview
@@ -18,9 +22,11 @@ You can testing on storybook. just simply run:
 yarn storybook
 ```
 
-### Usage
+### Basic Usage
 
 ```tsx
+// App.tsx
+
 import React from "react";
 import { AbcTextEditor } from "react-abc-editor";
 
@@ -31,7 +37,11 @@ export default function App() {
 
 ### Disable Edit mode and Click event
 
+If you want to TextEditor as read-only, set `allowEdit` to false for disable textarea, and set `allowClick` to false for disable click event.
+
 ```tsx
+// App.tsx
+
 import React from "react";
 import { AbcTextEditor } from "react-abc-editor";
 
@@ -42,7 +52,11 @@ export default function App() {
 
 ### Use predefined abc tune
 
+If you want to use the pre-made abc notation string, assign it to the `predefinedAbcString` prop.
+
 ```tsx
+// App.tsx
+
 import React from "react";
 import { AbcTextEditor } from "react-abc-editor";
 

@@ -1,7 +1,7 @@
 {
   "name": "react-abc-editor",
-  "version": "1.0.0",
-  "description": "A React components that can write abc notation",
+  "version": "1.0.2",
+  "description": "React component for showing and writing abc notations using the Abcjs library",
   "keywords": [
     "react",
     "react-components",
@@ -19,7 +19,7 @@
   "author": "Yong In Kim <d.winifired9078@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
+    "build": "rm -rf dist && rollup -c rollup.config.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
@@ -76,6 +76,8 @@
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "tslib": "^2.3.1",
     "webpack": "^5.70.0"
   }
 }
