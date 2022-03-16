@@ -41,6 +41,7 @@ const TextEditor = ({
       <div id="paper" />
       {allowEdit ? (
         <textarea
+          id="abcnotation-textarea"
           style={{ marginTop: "10px", height: "100px", width: "200px" }}
           value={abcString}
           onChange={onChange}
