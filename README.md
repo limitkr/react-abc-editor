@@ -1,11 +1,11 @@
 # react-abc-editor
 
 React component for showing and writing abc notations using the Abcjs library.<br>
-Thank you @paulrosen for creator of Abcjs library.
+Thank you [@paulrosen](https://github.com/paulrosen) for creator of Abcjs library.
 
-## Quick Start
+# Quick Start
 
-### Install
+## Install
 
 ```bash
 # Using npm:
@@ -14,7 +14,7 @@ npm i react-abc-editor
 yarn add react-abc-editor
 ```
 
-### Storybook Preview
+## Storybook Preview
 
 You can testing on storybook. just simply run:
 
@@ -22,7 +22,7 @@ You can testing on storybook. just simply run:
 yarn storybook
 ```
 
-### Basic Usage
+## Basic Usage
 
 ```tsx
 // App.tsx
@@ -64,5 +64,24 @@ const tune = "X: 1\nT: Cooley's\nM: 4/4\nL: 1/8\nK: Emin\n|:D2|"Em"EBBA B2 EB||"
 
 export default function App() {
   return <AbcTextEditor predefinedAbcString={tune} />;
+}
+```
+
+## Use Abcjs render options
+
+```tsx
+interface TextEditorProps {
+  options?: Omit<AbcVisualParams, "selectTypes" | "dragging">;
+}
+```
+
+Not required. However, you can set the `options` prop for advanced settings to visualizing score.
+
+```tsx
+import React from "react";
+import { AbcTextEditor } from "react-abc-editor";
+
+export default function App() {
+  return <AbcTextEditor options={{ draggingColor: "orange" }} />;
 }
 ```
