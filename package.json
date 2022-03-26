@@ -1,6 +1,6 @@
 {
   "name": "react-abc-editor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component for showing and writing abc notations using the Abcjs library",
   "keywords": [
     "react",
@@ -15,7 +15,7 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/limitkr-dev/react-abc-editor",
+  "repository": "https://github.com/limitkr/react-abc-editor",
   "author": "Yong In Kim <d.winifired9078@gmail.com>",
   "license": "MIT",
   "scripts": {

@@ -15,7 +15,7 @@ export interface TextEditorProps {
   /**
    * abcjs `renderAbc` options.
    */
-  options: Omit<AbcVisualParams, "selectTypes" | "dragging">;
+  options?: Omit<AbcVisualParams, "selectTypes" | "dragging">;
   /**
    * The value for showing score when TextEditor initialized first time.
    */
