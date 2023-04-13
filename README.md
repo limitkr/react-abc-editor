@@ -14,14 +14,6 @@ npm i react-abc-editor
 yarn add react-abc-editor
 ```
 
-## Storybook Preview
-
-You can testing on storybook. just simply run:
-
-```bash
-yarn storybook
-```
-
 ## Basic Usage
 
 ```tsx
