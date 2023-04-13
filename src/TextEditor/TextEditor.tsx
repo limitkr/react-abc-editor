@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect, useCallback, type ChangeEvent } from "react";
 import ABCJS, { AbcVisualParams } from "abcjs";
 import { TextEditorProps } from "./types";
 
@@ -17,22 +17,22 @@ const TextEditor = ({
   options,
   predefinedAbcString,
 }: TextEditorProps) => {
-  const [abcString, setAbcString] = React.useState(predefinedAbcString);
+  const [abcString, setAbcString] = useState(predefinedAbcString);
   const abcVisualOptions: AbcVisualParams = {
     ...options,
-    dragging: allowEdit ? true : false,
-    selectTypes: allowClick ? true : false,
+    dragging: !!allowEdit,
+    selectTypes: !!allowClick,
   };
 
-  const onChange = React.useCallback(
-    (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const onChange = useCallback(
+    (e: ChangeEvent<HTMLTextAreaElement>) => {
       const { value } = e.target;
       setAbcString(value);
     },
     [abcString]
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     ABCJS.renderAbc("paper", abcString, abcVisualOptions);
   }, [abcString]);
 

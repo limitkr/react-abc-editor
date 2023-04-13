@@ -1,4 +1,4 @@
-import { AbcVisualParams } from "abcjs";
+import type { AbcVisualParams } from "abcjs";
 
 export interface TextEditorProps {
   /**
