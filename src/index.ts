@@ -1,1 +1,1 @@
-export * from "./TextEditor";
+export { AbcTextEditor, type TextEditorProps } from "./TextEditor";

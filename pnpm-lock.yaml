@@ -7,7 +7,7 @@ specifiers:
   '@types/react': ^18.0.35
   '@typescript-eslint/eslint-plugin': ^5.58.0
   '@typescript-eslint/parser': ^5.58.0
-  abcjs: ^6.2.0
+  abcjs: ^6.2.2
   concurrently: ^8.0.1
   jest: ^29.5.0
   jest-environment-jsdom: ^29.5.0
@@ -26,7 +26,7 @@ devDependencies:
   '@types/react': 18.0.35
   '@typescript-eslint/eslint-plugin': 5.58.0_alm7vvqz6nrx2no5jita6oqd5q
   '@typescript-eslint/parser': 5.58.0_typescript@5.0.4
-  abcjs: 6.2.0
+  abcjs: 6.2.2
   concurrently: 8.0.1
   jest: 29.5.0_ts-node@10.9.1
   jest-environment-jsdom: 29.5.0
@@ -1244,8 +1244,8 @@ packages:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
     dev: true
 
-  /abcjs/6.2.0:
-    resolution: {integrity: sha512-tt8jpWcJOGCspOpyRGmFkGkAK5MStGg6eGKzKKpz9mvMLWGuw0atbehBaJYaWi272vDx4TG2eoi7aCmz1/cdrw==}
+  /abcjs/6.2.2:
+    resolution: {integrity: sha512-M5pvTb+0yABqScZBEN/bZmrMgX+iTtgD8vxAVTaKNNVt+ivyCzx0SLNYlTXYErlXu7QvPIoIiSPRojne6M24PA==}
     dev: true
 
   /acorn-globals/7.0.1:
@@ -1554,7 +1554,7 @@ packages:
       normalize-path: 3.0.0
       readdirp: 3.6.0
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /ci-info/3.8.0:
@@ -2025,8 +2025,8 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /fsevents/2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
@@ -2697,7 +2697,7 @@ packages:
       micromatch: 4.0.5
       walker: 1.0.8
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /jest-leak-detector/29.5.0:
@@ -3515,7 +3515,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /run-parallel/1.2.0:

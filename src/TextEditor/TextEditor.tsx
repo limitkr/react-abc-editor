@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, type ChangeEvent } from "react";
 import ABCJS, { AbcVisualParams } from "abcjs";
-import { TextEditorProps } from "./types";
+import type { TextEditorProps } from "./types";
 
 const defaultProps: TextEditorProps = {
   allowEdit: true,

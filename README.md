@@ -14,6 +14,16 @@ npm i react-abc-editor
 yarn add react-abc-editor
 ```
 
+## Update (2023-08-22)
+The `<AbcTextEditor />` component is scheduled to be deprecated in the next major release for the following two reasons:
+
+1. The React team is planning to discontinue support for `defaultProps`. see [pull requests](https://github.com/facebook/react/pull/25699)
+2. The current component structure is deemed difficult to extend.
+
+The new component will additionally support the following features:
+1. Styling
+2. Interactive Editor
+
 ## Basic Usage
 
 ```tsx
